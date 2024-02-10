@@ -1,0 +1,163 @@
+Subject: [PATCH] Make version optional
+---
+Index: cds_banking.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/cds_banking.yaml b/cds_banking.yaml
+--- a/cds_banking.yaml	(revision c9bb0fffc3928c51b97f2db3c1bee7d216bd5b8e)
++++ b/cds_banking.yaml	(date 1707558447702)
+@@ -104,7 +104,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -344,7 +344,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -534,7 +534,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -723,7 +723,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -906,7 +906,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -1179,7 +1179,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -1390,7 +1390,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -1595,7 +1595,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -1854,7 +1854,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -2044,7 +2044,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -2260,7 +2260,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -2522,7 +2522,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -2715,7 +2715,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -2937,7 +2937,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -3121,7 +3121,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -3426,7 +3426,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
+@@ -3514,7 +3514,7 @@
+         explode: false
+         in: header
+         name: x-v
+-        required: true
++        required: false
+         schema:
+           type: string
+         style: simple
