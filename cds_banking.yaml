@@ -104,7 +104,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -344,7 +344,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -534,7 +534,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -723,7 +723,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -906,7 +906,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -1179,7 +1179,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -1390,7 +1390,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -1595,7 +1595,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -1854,7 +1854,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -2044,7 +2044,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -2260,7 +2260,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -2522,7 +2522,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -2715,7 +2715,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -2937,7 +2937,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -3121,7 +3121,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -3426,7 +3426,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
@@ -3514,7 +3514,7 @@ paths:
         explode: false
         in: header
         name: x-v
-        required: true
+        required: false
         schema:
           type: string
         style: simple
