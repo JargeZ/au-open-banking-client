@@ -11,7 +11,7 @@ tasks:
   buildspec:
     cmds:
       - | 
-        docker run \
+        docker run --rm \
         -v $PWD/cds_banking.yaml:/openapi.yaml:ro \
         -v $PWD/spec/:/spec \
         openapitools/openapi-generator-cli:v7.3.0 generate \
