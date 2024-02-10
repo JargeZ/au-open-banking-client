@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 120
+per-file-ignores =
+  # S101: Allow the use of assert within the tests directory, since tests require it.
+  tests/**.py: S101
+exclude = .venv
