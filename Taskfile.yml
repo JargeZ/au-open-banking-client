@@ -1,0 +1,34 @@
+version: '3'
+
+tasks:
+  getspec:
+    cmds:
+      - wget -O ./cds_banking.yaml https://consumerdatastandardsaustralia.github.io/standards/includes/swagger/cds_banking.yaml
+      - diff -u ./cds_banking.yaml ./contract-patches/Make_version_optional.patch || true
+      - patch -u -b ./cds_banking.yaml -i ./contract-patches/Make_version_optional.patch
+    silent: true
+
+  buildspec:
+    cmds:
+      - | 
+        docker run \
+        -v $PWD/cds_banking.yaml:/openapi.yaml:ro \
+        -v $PWD/spec/:/spec \
+        openapitools/openapi-generator-cli:v7.3.0 generate \
+        -i /openapi.yaml \
+        -g python \
+        -o /spec \
+        --package-name au_open_banking_spec \
+        --additional-properties=generateSourceCodeOnly=false \
+        --additional-properties=packageName=au_open_banking_spec \
+        --additional-properties=library=asyncio
+#      - |
+#        sed -i -r 's/(x_v: Annotated\[)StrictStr(, Field\(description=".*"\)\]),/\1Optional[StrictStr]\2,/g' spec/au_open_banking_spec/api/*.py
+    silent: true
+    desc: Builds the CDS Banking API client
+
+  lint:
+    cmds:
+      - poetry run mypy src/
+      - poetry run black src/
+      - poetry run flake8 src/
