@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "australia-open-banking"
+version = "0.1.0"
+description = "This library provides a convenient way to work with all Australian Open Banking API methods"
+authors = ["Pavel Khorikov (JargeZ) <levpony@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "au_open_banking_client", from = "src"},
+    {include = "au_open_banking_spec", from = "spec"}
+]
+repository = "https://github.com/JargeZ/australia-open-banking-client"
+license = "MIT License"
+keywords = ["Open Banking", "OpenAPI", "CDR Banking API", "Australia Open Banking", "CDR", "Consumer Data Right"]
+include = ["src/au_open_banking_client/py.typed"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+# Spec dependencies
+urllib3 = ">= 1.25.3"
+python-dateutil = ">=2.8.2"
+aiohttp = ">= 3.8.4"
+aiohttp-retry = ">= 2.8.3"
+pydantic = ">=2"
+typing-extensions = ">=4.7.1"
+
+[tool.poetry.group.dev.dependencies]
+tox = ">=3.9.0"
+types-python-dateutil = ">=2.8.19.14"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+pytest-asyncio = "=0.20.3"
+pytest = "^7.4.3"
+
+[tool.mypy]
+mypy_path = "./"
+plugins = [
+    "pydantic.mypy"
+]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.flake8]
+max-line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
