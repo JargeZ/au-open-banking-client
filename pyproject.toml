@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "australia-open-banking"
+name = "australia-open-banking-client"
 version = "0.1.0"
 description = "This library provides a convenient way to work with all Australian Open Banking API methods"
 authors = ["Pavel Khorikov (JargeZ) <levpony@gmail.com>"]
