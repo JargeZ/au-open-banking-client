@@ -5,7 +5,7 @@ It provides a simple way to interact with the API using either sync or async cli
 ---
 ### ⚠️ DRAFT warning
 ### This project is a work in progress and is not yet ready for use.
-
+This project will probably not be maintained, but serves as a basis for creating extensible abstract clients based on openapi
 
 ### Usage
 You can use endpoints directly
